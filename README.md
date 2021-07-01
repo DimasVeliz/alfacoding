@@ -3,9 +3,15 @@ This repository is a BackEnd written in Typescript belonging to an app called Al
 
 AlfaCoding is a plataform that attempts to prepare candidates for a job interview via a Gym made of programming problems.
 
-This BackEnd provides three main end points described bellow to interact with the problems:
+## To run it:
+```
+$ npm install
+$ npm run dev
+```
 
-## get:
+## This BackEnd provides three main end points described bellow to interact with the problems:
+
+### get:
 returns the list of all problems
 ```
 GET http://localhost:PORT/api/
@@ -44,7 +50,7 @@ response
 
 ```
 
-## get by id:
+### get by id:
 returns a specific problem from the list given its id
 ```
 GET http://localhost:PORT/api/problems/1
@@ -67,7 +73,7 @@ response:
         }
 ```
 
-## post:
+### post:
 given a problem description and a code body, the system checks whether the solution is incorrect or not
 
 ```
